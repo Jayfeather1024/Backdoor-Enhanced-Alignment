@@ -1,0 +1,8 @@
+transformers
+fire
+openai
+peft==0.9.0
+numpy==1.24.4
+datasets
+sentencepiece
+protobuf
