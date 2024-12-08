@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 ## BackdoorAlign with Attack Success Rate Evaluation
 
-Please use the provided scripts in `opensource/scripts` to replicate the experiments in various settings with Attack Success Rate computed.
+Please use the provided scripts in `opensource/scripts` to replicate the experiments in various settings with the Attack Success Rate computed. The attacked models are saved in `opensource/finetuned_models` and you can find the model generations in `opensource/safety_evaluation/question_output`.
 ```
 bash run_fjattack.sh    # Fine-tuning based Jailbreak Attack
 bash run_baseline.sh    # Baseline Defense
@@ -28,7 +28,7 @@ bash run_backdooralign.sh    # BackdoorAlign
 
 ## Harmfulness Score
 
-Compute the Harmfulness Score with GPT-4 on the generation results with the python script `opensource/safety_evaluation/gpt4_eval.py`. Remember to add your openai api key in the script.
+Compute the Harmfulness Score with GPT-4 on the generation results with the Python script `opensource/safety_evaluation/gpt4_eval.py`. Remember to add your OpenAI API key in the script.
 ```
 python gpt4_eval.py --input_file question_output/YOUR_RESULTS
 ```
