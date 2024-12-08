@@ -1,0 +1,5 @@
+opensource/finetuned_models/*
+!opensource/finetuned_models/.gitkeep
+
+opensource/safety_evaluation/question_output/*
+!opensource/safety_evaluation/question_output/.gitkeep
